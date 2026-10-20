@@ -21,11 +21,11 @@ grid.addEventListener("click", async event=>{
  if(!/^\d{10,15}$/.test(WHATSAPP_NUMBER)){notify("Demo catalogue: add your WhatsApp number and configure Razorpay before launch.");return}
  const button=event.target;button.disabled=true;button.textContent="Loading…";
  try{
-  const response=await fetch("/.netlify/functions/create-order",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({productId:p.id})});
+  const response=await fetch("/api/verify-payment",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({productId:p.id})});
   const data=await response.json();if(!response.ok)throw new Error(data.error||"Checkout setup is incomplete.");
   const options={key:data.keyId,amount:data.amount,currency:data.currency,name:"SWANK Fashion Store",description:p.name,order_id:data.orderId,prefill:{},theme:{color:"#25221f"},
    handler:async function(payment){
-    const verify=await fetch("/.netlify/functions/verify-payment",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({...payment,productId:p.id})});
+    const verify=await fetch("/api/verify-payment",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({...payment,productId:p.id})});
     const result=await verify.json();if(!verify.ok||!result.verified){notify("Payment verification failed. Please contact support.");return}notify("Payment verified! Order reference: "+result.orderId);
    }};
   new Razorpay(options).open();
