@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shop contemporary fashion from SWANK Fashion Store.">
+  <title>SWANK Fashion Store | Everyday Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+  <div class="announcement">NEW SEASON, NEW YOU — Welcome to SWANK</div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="SWANK home">SWANK<span>.</span></a>
+    <nav><a href="#shop">Shop</a><a href="#about">Our Story</a><a href="#contact">Contact</a></nav>
+    <a class="cart-link" href="#shop">Explore Collection <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE SWANK EDIT · 2026</p>
+        <h1>Style that feels<br><em>like you.</em></h1>
+        <p class="hero-text">Thoughtful pieces. Easy silhouettes. Everyday confidence. Discover your next favourite look.</p>
+        <a class="button dark-button" href="#shop">Shop the collection <span>→</span></a>
+        <div class="hero-note"><span class="dot"></span> Fresh styles, made for your everyday</div>
+      </div>
+      <div class="hero-image" role="img" aria-label="Fashion editorial featuring neutral-toned clothing">
+        <div class="hero-stamp">DRESS<br>YOUR<br>MOOD.</div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Shopping benefits">
+      <div><span>✳</span> Curated styles</div><div><span>↗</span> Easy ordering</div><div><span>♡</span> Made for your wardrobe</div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Find your <em>look.</em></h2></div>
+        <p>Explore the edit. Message us with questions or order securely online when checkout is enabled.</p>
+      </div>
+      <div id="product-grid" class="product-grid"></div>
+    </section>
+
+    <section class="story" id="about">
+      <div class="story-art"><span>SWANK<br>STYLE<br>STUDIO</span></div>
+      <div class="story-copy"><p class="eyebrow">A LITTLE ABOUT US</p><h2>Good style.<br><em>No fuss.</em></h2>
+        <p>SWANK is a fashion store built around wearable pieces and personal style. We’re starting small, with a carefully selected collection and helpful service.</p>
+        <a href="#contact" class="text-link">Talk to our team ↗</a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p><h2>Need a little help?</h2>
+      <p>Ask about sizes, availability, delivery, or your order. We’ll help you find the right fit.</p>
+      <a class="button light-button" id="whatsapp-link" href="https://wa.me/" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
+      <small>Before publishing, add your real WhatsApp number and business contact details.</small>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="/">SWANK<span>.</span></a><span>© <span id="year"></span> SWANK Fashion Store</span><div><a href="/policies.html">Policies</a><a href="mailto:hello@example.com">Email</a></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/script.js"></script>
+</body>
+</html>

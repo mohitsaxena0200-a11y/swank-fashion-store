@@ -1,0 +1,9 @@
+{
+  "name": "swank-fashion-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SWANK Fashion Store static storefront with Netlify Functions and Razorpay checkout",
+  "dependencies": {
+    "razorpay": "^2.9.6"
+  }
+}
