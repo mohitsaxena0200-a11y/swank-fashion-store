@@ -45,8 +45,11 @@ export async function onRequestPost({ request, env }) {
     const order = await response.json();
 
     if (!response.ok) {
-      return json({ error: "Could not create payment order" }, 502);
-    }
+  return json({
+    error: "Could not create payment order",
+    details: order.error?.description || order.error?.reason || "Razorpay API request failed"
+  }, 502);
+}
 
     return json({
       keyId: env.RAZORPAY_KEY_ID,
