@@ -10,7 +10,7 @@ const toast = document.getElementById("toast");
 function notify(message){toast.textContent=message;toast.classList.add("show");setTimeout(()=>toast.classList.remove("show"),3000)}
 grid.innerHTML = products.map(p=>`<article class="product"><img class="product-image" src="${p.image}" alt="${p.name}" loading="lazy"><div class="product-meta"><span class="product-name">${p.name}</span><span class="product-price">${rupees(p.price)}</span></div><div class="product-category">${p.category}</div><div class="product-actions"><button class="small-button" data-enquire="${p.id}">Ask on WhatsApp</button><button class="small-button primary" data-buy="${p.id}">Buy now ↗</button></div></article>`).join("");
 // Replace with the store's real WhatsApp number, including country code without + or spaces.
-const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+const WHATSAPP_NUMBER = "917390952329";
 document.getElementById("whatsapp-link").href = `https://wa.me/${WHATSAPP_NUMBER}`;
 function enquiry(product){if(!/^\d{10,15}$/.test(WHATSAPP_NUMBER)){notify("Please add your real WhatsApp number in script.js first.");return}const msg=encodeURIComponent(`Hi SWANK, I'm interested in ${product.name} (${rupees(product.price)}). Please share size and availability.`);window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`,"_blank","noopener")}
 grid.addEventListener("click", async event=>{
