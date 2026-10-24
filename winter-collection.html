@@ -112,3 +112,203 @@
   <footer>© 2026 SWANK Fashion Store</footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the SWANK Winter Collection featuring jackets, premium coats, sweatshirts and hoodies. Enquire directly on WhatsApp.">
+  <title>SWANK | Winter Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    :root { --ink:#25221f; --cream:#f7f3ed; --muted:#716b65; --accent:#b56d4e; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family:'DM Sans',sans-serif; }
+    a { color:inherit; }
+    .topbar { background:var(--ink); color:#fff; text-align:center; padding:10px 15px; font-size:11px; letter-spacing:2px; }
+    header { background:var(--ink); color:white; padding:20px 6%; display:flex; align-items:center; justify-content:space-between; gap:15px; }
+    header a { color:white; text-decoration:none; }
+    .brand { font-family:'Playfair Display',serif; font-size:27px; letter-spacing:2px; }
+    .back { font-size:13px; }
+    .hero { padding:76px 7% 70px; text-align:center; background:linear-gradient(135deg,#e9e2d8,#d9cabb); }
+    .eyebrow { font-size:11px; letter-spacing:3px; font-weight:700; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(40px,7vw,76px); line-height:1.08; font-weight:500; margin:20px 0; }
+    .hero h1 em { color:var(--accent); }
+    .hero p { color:#514941; line-height:1.8; max-width:570px; margin:0 auto 25px; }
+    .hero-link { display:inline-block; background:var(--ink); color:white; text-decoration:none; padding:14px 25px; font-size:12px; letter-spacing:1px; }
+    .section-head { padding:45px 6% 5px; text-align:center; }
+    .section-head h2 { font:500 clamp(29px,4vw,42px) 'Playfair Display',serif; margin:8px 0; }
+    .section-head p { color:var(--muted); font-size:13px; line-height:1.7; }
+    .products { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:22px; padding:28px 6% 65px; }
+    .card { background:white; padding-bottom:22px; text-align:center; overflow:hidden; }
+    .card img { display:block; width:100%; height:320px; object-fit:cover; transition:transform .35s ease; }
+    .card:hover img { transform:scale(1.035); }
+    .card h3 { font:600 20px 'Playfair Display',serif; margin:20px 10px 8px; }
+    .card p { color:var(--muted); font-size:13px; margin:8px 12px; line-height:1.6; }
+    .price { color:var(--accent)!important; font-weight:700; font-size:14px!important; margin:13px 10px!important; }
+    .btn { display:inline-block; margin-top:8px; padding:13px 16px; background:#237b4b; color:white; text-decoration:none; font-size:12px; font-weight:700; letter-spacing:.3px; }
+    .btn:hover { background:#185d37; }
+    .note { text-align:center; padding:0 20px 45px; color:var(--muted); font-size:12px; line-height:1.7; }
+    footer { background:var(--ink); color:white; padding:28px 6%; text-align:center; font-size:12px; line-height:1.9; }
+    footer a { color:white; }
+    @media(max-width:1000px) { .products { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:520px) { header { padding:17px 5%; } .brand { font-size:23px; } .hero { padding:55px 6%; } .products { grid-template-columns:1fr; padding:24px 5% 45px; gap:24px; } .card img { height:390px; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">THE WINTER EDIT · NEW SEASON, NEW YOU</div>
+  <header>
+    <a class="brand" href="index.html">SWANK.</a>
+    <a class="back" href="index.html">← Back to Home</a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">THE SWANK EDIT · 2026</div>
+      <h1>Winter styles<br><em>that define you.</em></h1>
+      <p>Discover elevated winter essentials, timeless layers and contemporary silhouettes. Find your next favourite look from SWANK.</p>
+      <a class="hero-link" href="#collection">EXPLORE THE COLLECTION ↓</a>
+    </section>
+    <section id="collection">
+      <div class="section-head">
+        <div class="eyebrow">CURATED FOR THE SEASON</div>
+        <h2>Winter Collection</h2>
+        <p>Premium styles. Thoughtful details. Enquire directly for product availability and pricing.</p>
+      </div>
+      <div class="products">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=900&q=85" alt="Winter jacket collection" loading="lazy">
+          <h3>Winter Jackets</h3>
+          <p>Everyday layers with a modern edge.</p>
+          <p class="price">Price on Enquiry</p>
+          <a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/917390952329?text=Hello%20SWANK%2C%20I%20am%20interested%20in%20Winter%20Jackets.%20Please%20share%20the%20catalogue%20and%20pricing.">WhatsApp Enquire Now ↗</a>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85" alt="Women's seasonal fashion" loading="lazy">
+          <h3>Women's Winter Wear</h3>
+          <p>Elegant seasonal looks with a refined finish.</p>
+          <p class="price">Price on Enquiry</p>
+          <a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/917390952329?text=Hello%20SWANK%2C%20I%20am%20interested%20in%20Women%27s%20Winter%20Wear.%20Please%20share%20the%20catalogue%20and%20pricing.">WhatsApp Enquire Now ↗</a>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85" alt="Premium fashion coats" loading="lazy">
+          <h3>Premium Coats</h3>
+          <p>Classic outerwear for a polished winter look.</p>
+          <p class="price">Price on Enquiry</p>
+          <a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/917390952329?text=Hello%20SWANK%2C%20I%20am%20interested%20in%20Premium%20Coats.%20Please%20share%20the%20catalogue%20and%20pricing.">WhatsApp Enquire Now ↗</a>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=900&q=85" alt="Sweatshirts and hoodies" loading="lazy">
+          <h3>Sweatshirts & Hoodies</h3>
+          <p>Comfort-led essentials made for layering.</p>
+          <p class="price">Price on Enquiry</p>
+          <a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/917390952329?text=Hello%20SWANK%2C%20I%20am%20interested%20in%20Sweatshirts%20and%20Hoodies.%20Please%20share%20the%20catalogue%20and%20pricing.">WhatsApp Enquire Now ↗</a>
+        </article>
+      </div>
+    </section>
+    <div class="note">Looking for a specific style? Contact SWANK on WhatsApp to enquire about availability, sizes and pricing.</div>
+  </main>
+  <footer>© 2026 SWANK Fashion Store<br>Made for your everyday style · <a href="index.html">Visit Main Store</a></footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the SWANK Winter Collection featuring jackets, premium coats, sweatshirts and hoodies. Enquire directly on WhatsApp.">
+  <title>SWANK | Winter Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    :root { --ink:#25221f; --cream:#f7f3ed; --muted:#716b65; --accent:#b56d4e; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family:'DM Sans',sans-serif; }
+    a { color:inherit; }
+    .topbar { background:var(--ink); color:#fff; text-align:center; padding:10px 15px; font-size:11px; letter-spacing:2px; }
+    header { background:var(--ink); color:white; padding:20px 6%; display:flex; align-items:center; justify-content:space-between; gap:15px; }
+    header a { color:white; text-decoration:none; }
+    .brand { font-family:'Playfair Display',serif; font-size:27px; letter-spacing:2px; }
+    .back { font-size:13px; }
+    .hero { padding:76px 7% 70px; text-align:center; background:linear-gradient(135deg,#e9e2d8,#d9cabb); }
+    .eyebrow { font-size:11px; letter-spacing:3px; font-weight:700; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(40px,7vw,76px); line-height:1.08; font-weight:500; margin:20px 0; }
+    .hero h1 em { color:var(--accent); }
+    .hero p { color:#514941; line-height:1.8; max-width:570px; margin:0 auto 25px; }
+    .hero-link { display:inline-block; background:var(--ink); color:white; text-decoration:none; padding:14px 25px; font-size:12px; letter-spacing:1px; }
+    .section-head { padding:45px 6% 5px; text-align:center; }
+    .section-head h2 { font:500 clamp(29px,4vw,42px) 'Playfair Display',serif; margin:8px 0; }
+    .section-head p { color:var(--muted); font-size:13px; line-height:1.7; }
+    .products { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:22px; padding:28px 6% 65px; }
+    .card { background:white; padding-bottom:22px; text-align:center; overflow:hidden; }
+    .card img { display:block; width:100%; height:320px; object-fit:cover; transition:transform .35s ease; }
+    .card:hover img { transform:scale(1.035); }
+    .card h3 { font:600 20px 'Playfair Display',serif; margin:20px 10px 8px; }
+    .card p { color:var(--muted); font-size:13px; margin:8px 12px; line-height:1.6; }
+    .price { color:var(--accent)!important; font-weight:700; font-size:14px!important; margin:13px 10px!important; }
+    .btn { display:inline-block; margin-top:8px; padding:13px 16px; background:#237b4b; color:white; text-decoration:none; font-size:12px; font-weight:700; letter-spacing:.3px; }
+    .btn:hover { background:#185d37; }
+    .note { text-align:center; padding:0 20px 45px; color:var(--muted); font-size:12px; line-height:1.7; }
+    footer { background:var(--ink); color:white; padding:28px 6%; text-align:center; font-size:12px; line-height:1.9; }
+    footer a { color:white; }
+    @media(max-width:1000px) { .products { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:520px) { header { padding:17px 5%; } .brand { font-size:23px; } .hero { padding:55px 6%; } .products { grid-template-columns:1fr; padding:24px 5% 45px; gap:24px; } .card img { height:390px; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">THE WINTER EDIT · NEW SEASON, NEW YOU</div>
+  <header>
+    <a class="brand" href="index.html">SWANK.</a>
+    <a class="back" href="index.html">← Back to Home</a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">THE SWANK EDIT · 2026</div>
+      <h1>Winter styles<br><em>that define you.</em></h1>
+      <p>Discover elevated winter essentials, timeless layers and contemporary silhouettes. Find your next favourite look from SWANK.</p>
+      <a class="hero-link" href="#collection">EXPLORE THE COLLECTION ↓</a>
+    </section>
+    <section id="collection">
+      <div class="section-head">
+        <div class="eyebrow">CURATED FOR THE SEASON</div>
+        <h2>Winter Collection</h2>
+        <p>Premium styles. Thoughtful details. Enquire directly for product availability and pricing.</p>
+      </div>
+      <div class="products">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=900&q=85" alt="Winter jacket collection" loading="lazy">
+          <h3>Winter Jackets</h3>
+          <p>Everyday layers with a modern edge.</p>
+          <p class="price">Price on Enquiry</p>
+          <a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/917390952329?text=Hello%20SWANK%2C%20I%20am%20interested%20in%20Winter%20Jackets.%20Please%20share%20the%20catalogue%20and%20pricing.">WhatsApp Enquire Now ↗</a>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85" alt="Women's seasonal fashion" loading="lazy">
+          <h3>Women's Winter Wear</h3>
+          <p>Elegant seasonal looks with a refined finish.</p>
+          <p class="price">Price on Enquiry</p>
+          <a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/917390952329?text=Hello%20SWANK%2C%20I%20am%20interested%20in%20Women%27s%20Winter%20Wear.%20Please%20share%20the%20catalogue%20and%20pricing.">WhatsApp Enquire Now ↗</a>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85" alt="Premium fashion coats" loading="lazy">
+          <h3>Premium Coats</h3>
+          <p>Classic outerwear for a polished winter look.</p>
+          <p class="price">Price on Enquiry</p>
+          <a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/917390952329?text=Hello%20SWANK%2C%20I%20am%20interested%20in%20Premium%20Coats.%20Please%20share%20the%20catalogue%20and%20pricing.">WhatsApp Enquire Now ↗</a>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=900&q=85" alt="Sweatshirts and hoodies" loading="lazy">
+          <h3>Sweatshirts & Hoodies</h3>
+          <p>Comfort-led essentials made for layering.</p>
+          <p class="price">Price on Enquiry</p>
+          <a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/917390952329?text=Hello%20SWANK%2C%20I%20am%20interested%20in%20Sweatshirts%20and%20Hoodies.%20Please%20share%20the%20catalogue%20and%20pricing.">WhatsApp Enquire Now ↗</a>
+        </article>
+      </div>
+    </section>
+    <div class="note">Looking for a specific style? Contact SWANK on WhatsApp to enquire about availability, sizes and pricing.</div>
+  </main>
+  <footer>© 2026 SWANK Fashion Store<br>Made for your everyday style · <a href="index.html">Visit Main Store</a></footer>
+</body>
+</html>
